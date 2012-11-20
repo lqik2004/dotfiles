@@ -11,6 +11,9 @@ set ruler               " show the cursor position
 syntax on               " syntax highlighting
 set hlsearch            " highlight the last searched term
 filetype plugin on      " use the file type plugins
+filetype on
+filetype indent on 
+set completeopt=longest,menu
 set helplang=cn
 
 " When editing a file, always jump to the last cursor position
@@ -30,3 +33,11 @@ au BufWrite /private/etc/pw.* set nowritebackup
 "Pathogen{
 call pathogen#infect()
 "}
+"
+"powerline{
+ set guifont=PowerlineSymbols\ for\ Powerline
+ set nocompatible
+ set t_Co=256
+ let g:Powerline_symbols = 'fancy'
+"}
+"}}
