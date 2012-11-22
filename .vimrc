@@ -6,16 +6,19 @@ set modelines=0		" CVE-2007-2438
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 set backspace=2		" more powerful backspacing
 set ai                  " auto indenting
-set history=100         " keep 100 lines of history
+set history=400         " keep 100 lines of history
 set ruler               " show the cursor position
 syntax on               " syntax highlighting
+syntax enable
 set hlsearch            " highlight the last searched term
 filetype plugin on      " use the file type plugins
 filetype on
 filetype indent on 
 set completeopt=longest,menu
+" Chinese Version Help Files
 set helplang=cn
 
+let tlist_objc_settings    = 'objc;i:interface;c:class;m:method;p:property'
 " When editing a file, always jump to the last cursor position
 autocmd BufReadPost *
 \ if ! exists("g:leave_my_cursor_position_alone") |
@@ -41,3 +44,13 @@ call pathogen#infect()
  let g:Powerline_symbols = 'fancy'
 "}
 "}}
+
+" Solarized stuff{
+"If you are using the solarized color scheme with your terminal the 16 ANSI colors will be set to the solarized colors, in which case you want to set let g:solarized_termcolors=16. If you use 256 it will be close, but the background will be grey instead of the deep sea blue.
+ let g:solarized_termcolors = 256
+ let g:solarized_visibility = "high"
+ let g:solarized_contrast = "high"
+ let g:solarized_termtrans = 1
+ set background=dark
+ colorscheme solarized
+"}
