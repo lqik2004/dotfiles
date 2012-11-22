@@ -8,12 +8,15 @@ set backspace=2		" more powerful backspacing
 set ai                  " auto indenting
 set history=400         " keep 100 lines of history
 set ruler               " show the cursor position
+set number				" show line number
 syntax on               " syntax highlighting
 syntax enable
 set hlsearch            " highlight the last searched term
 filetype plugin on      " use the file type plugins
 filetype on
 filetype indent on 
+set sw=4
+set ts=4
 set completeopt=longest,menu
 " Chinese Version Help Files
 set helplang=cn
