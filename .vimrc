@@ -15,8 +15,11 @@ set hlsearch            " highlight the last searched term
 filetype plugin on      " use the file type plugins
 filetype on
 filetype indent on 
-set sw=4
-set ts=4
+" setting tab spacing
+set expandtab
+set shiftwidth=4
+set tabstop=4
+"complete option
 set completeopt=longest,menu
 " Chinese Version Help Files
 set helplang=cn

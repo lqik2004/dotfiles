@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/liuchao/Dropbox/dotfiles/.vim/bundle/command_t/ruby/command-t'
 let g:netrw_dirhist_2='/Users/liuchao/Desktop'
 let g:netrw_dirhist_3='/Users/liuchao/.vim'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/Users/liuchao/.oh-my-zsh'
 let g:netrw_dirhist_6='/Users/liuchao/.ssh'
 let g:netrw_dirhist_7='/Users/liuchao/Documents/erlangTest'
 let g:netrw_dirhist_8='/Users/liuchao/.rvm/config'
+let g:netrw_dirhist_9='/Users/liuchao/Dropbox/AppDev/StandingConference'
