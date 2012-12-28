@@ -8,7 +8,9 @@ set backspace=2		" more powerful backspacing
 set ai                  " auto indenting
 set history=400         " keep 100 lines of history
 set ruler               " show the cursor position
-set number				" show line number
+set number				" show line num
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs
 syntax on               " syntax highlighting
 syntax enable
 set hlsearch            " highlight the last searched term
@@ -41,13 +43,13 @@ au BufWrite /private/etc/pw.* set nowritebackup
 "Conf for Plugins {{  
 "Pathogen{
 call pathogen#infect()
+call pathogen#helptags()
 "}
 "
 "powerline{
  set guifont=PowerlineSymbols\ for\ Powerline
- set nocompatible
  set t_Co=256
- let g:Powerline_symbols = 'fancy'
+ let g:Powerline_symbols = 'unicode'
 "}
 "}}
 
