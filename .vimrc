@@ -25,8 +25,8 @@ set tabstop=4
 set completeopt=longest,menu
 " Chinese Version Help Files
 set helplang=cn
-
-let tlist_objc_settings    = 'objc;i:interface;c:class;m:method;p:property'
+" Add ru filetype syntax on
+au BufRead,BufNewFile *.ru setfiletype ruby
 " When editing a file, always jump to the last cursor position
 autocmd BufReadPost *
 \ if ! exists("g:leave_my_cursor_position_alone") |
@@ -71,4 +71,9 @@ call pathogen#helptags()
     let Tlist_GainFocus_On_ToggleOpen = 1 "打开taglist时，光标保留在taglist窗口
     let Tlist_Ctags_Cmd='/usr/local/bin/ctags' "设置ctags命令的位置
     nnoremap <leader>tl : Tlist<CR>  "设置关闭和打开taglist窗口的快捷键
+    " for Objective-C
+    let tlist_objc_settings    = 'objc;i:interface;c:class;m:method;p:property'
+"}
+"commandT{
+    nnoremap <leader>ct : CommandT<CR> "Open CommandT
 "}
