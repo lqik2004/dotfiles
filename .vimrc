@@ -25,6 +25,8 @@ set tabstop=4
 set completeopt=longest,menu
 " Chinese Version Help Files
 set helplang=cn
+" Paste Toggle
+set pastetoggle=<F9>
 " Add ru filetype syntax on
 au BufRead,BufNewFile *.ru setfiletype ruby
 " When editing a file, always jump to the last cursor position
